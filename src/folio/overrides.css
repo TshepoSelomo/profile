@@ -1,0 +1,30 @@
+.section.active {
+  animation: none;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.home .intro .lead {
+  max-width: 38rem;
+  margin: 14px auto 0;
+  color: #504e70;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.portfolio-info p {
+  color: #fff;
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+}
+
+.portfolio-item-inner:hover .portfolio-info p {
+  opacity: 1;
+  transform: translateX(0);
+}

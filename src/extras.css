@@ -1,0 +1,165 @@
+.pf-portrait {
+  border-radius: 1.6rem;
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--primary) 45%, transparent),
+    0 28px 70px -36px color-mix(in oklab, var(--primary) 70%, transparent);
+}
+
+.pf-portrait .portrait-frame {
+  border-radius: inherit;
+  border: 0;
+}
+
+.pf-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+}
+
+.pf-chip {
+  border: 1px solid color-mix(in oklab, var(--primary) 35%, transparent);
+  background: color-mix(in oklab, var(--primary) 10%, transparent);
+  color: var(--foreground);
+  border-radius: 999px;
+  padding: 0.38rem 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.pf-skills {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .pf-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pf-skill {
+  border-radius: 1rem;
+  border: 1px solid color-mix(in oklab, var(--border) 90%, transparent);
+  background: color-mix(in oklab, var(--surface) 72%, transparent);
+  padding: 1rem 1.05rem 1.05rem 1rem;
+  border-left: 3px solid var(--primary);
+}
+
+.pf-skill p:last-child {
+  margin: 0.35rem 0 0;
+}
+
+.pf-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.pf-role {
+  border-radius: 1.15rem;
+  border: 1px solid color-mix(in oklab, var(--border) 90%, transparent);
+  background: color-mix(in oklab, var(--surface) 55%, transparent);
+  padding: 1.15rem 1.2rem 1.2rem;
+}
+
+.pf-role .role-row {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: none;
+}
+
+.pf-role .role-row:hover {
+  background: transparent;
+  transform: none;
+}
+
+.pf-period {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  color: var(--primary);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pf-points {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pf-points li {
+  position: relative;
+  padding-left: 0.95rem;
+  margin-top: 0.4rem;
+}
+
+.pf-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+.pf-work {
+  display: grid;
+  gap: 1.15rem;
+}
+
+@media (min-width: 900px) {
+  .pf-work {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pf-work > .reveal:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+.pf-shot {
+  overflow: hidden;
+  border-radius: 1.35rem;
+  border: 1px solid color-mix(in oklab, var(--border) 90%, transparent);
+  background: color-mix(in oklab, var(--surface) 70%, transparent);
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s;
+}
+
+.pf-shot:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+}
+
+.pf-shot > a {
+  display: block;
+}
+
+.pf-shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.pf-shot-body {
+  padding: 1.15rem 1.2rem 1.3rem;
+}
+
+.pf-contact {
+  border-radius: 1.6rem;
+  border: 1px solid color-mix(in oklab, var(--primary) 30%, transparent);
+  background:
+    radial-gradient(circle at top right, color-mix(in oklab, var(--primary) 18%, transparent), transparent 42%),
+    color-mix(in oklab, var(--surface) 75%, transparent);
+  padding: 1.6rem 1.4rem 1.7rem;
+}
