@@ -102,13 +102,15 @@ export const roles = [
   },
 ];
 
+const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
+
 export const projects = [
   {
     title: "Inventory Management System",
     kind: "Angular · C#/.NET · SQL Server",
     blurb:
       "Inventory system for Unplugg IT covering stock, equipment tracking, and branch-based access. I built Angular screens, integrated APIs, shaped the relational data, and worked on stock transfers, reporting, and availability.",
-    image: "/inventory.jpg",
+    image: asset("inventory.jpg"),
     alt: "Warehouse aisle with stocked shelves and a barcode scanner",
   },
   {
@@ -116,7 +118,7 @@ export const projects = [
     kind: "Angular · TypeScript · REST APIs",
     blurb:
       "Insurance web application. I built Angular interfaces for login and OTP, connected them to backend APIs, and worked on dashboard, policy, payment, and navigation flows.",
-    image: "/insurer.jpg",
+    image: asset("insurer.jpg"),
     alt: "A quiet living room with a laptop, house keys, and a plant",
   },
   {
@@ -124,7 +126,7 @@ export const projects = [
     kind: "Angular · Ionic · Capacitor",
     blurb:
       "Angular and Ionic application for managing graves, sections, and types. I built the interfaces and navigation, and worked with Capacitor in an Android development setup.",
-    image: "/memorial.jpg",
+    image: asset("memorial.jpg"),
     alt: "A quiet green memorial garden with trees and a gravel path",
   },
   {
@@ -132,7 +134,7 @@ export const projects = [
     kind: "ASP.NET MVC · C# · SQL Server",
     blurb:
       "Maintained and enhanced an existing funeral services application, working in ASP.NET MVC, C#, and SQL Server.",
-    image: "/farewell.jpg",
+    image: asset("farewell.jpg"),
     alt: "White lilies on a stone ledge in a bright, calm hall",
   },
   {
@@ -141,7 +143,7 @@ export const projects = [
     year: "2024",
     blurb:
       "Company website for a construction, supply, and development business. I built the public site, including services, the team, accreditations, and the contact form.",
-    image: "/diarabile-cover.jpg",
+    image: asset("diarabile-cover.jpg"),
     alt: "Homepage of the Diarabile Projects website",
     url: "https://www.diarabileprojects.co.za/",
   },
@@ -151,7 +153,7 @@ export const projects = [
     year: "2024",
     blurb:
       "Group website for construction, facilities maintenance, and security. I built the pages that present the divisions, credentials, and contact details.",
-    image: "/blaque-cover.jpg",
+    image: asset("blaque-cover.jpg"),
     alt: "Homepage of the Blaque Orchids Group website",
     url: "https://www.blaqueorchidsgroup.co.za/",
   },
@@ -161,7 +163,7 @@ export const projects = [
     year: "2024",
     blurb:
       "Talent portal for Vico.net, a virtual collaboration network. I built the front end for signing in and creating a profile.",
-    image: "/viconet-cover.jpg",
+    image: asset("viconet-cover.jpg"),
     alt: "Talent login page for Vico.net",
     url: "https://talent.viconetgroup.com/",
   },

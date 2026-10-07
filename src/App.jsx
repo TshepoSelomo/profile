@@ -110,7 +110,7 @@ function Home({ onContact }) {
     <section className="home section active" id="home">
       <div className="container">
         <div className="intro">
-          <img src="/portrait.jpg" alt={`Portrait of ${profile.fullName}`} className="shadow-dark" />
+          <img src={`${import.meta.env.BASE_URL}portrait.jpg`} alt={`Portrait of ${profile.fullName}`} className="shadow-dark" />
           <h1>{profile.fullName}</h1>
           <p>Software Developer</p>
           <p className="lead">{profile.intro}</p>
